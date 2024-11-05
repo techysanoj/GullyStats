@@ -1,0 +1,282 @@
+/* styles.css */
+html, body {
+    height: 100%;
+    width: 100%;
+    /* padding: 2%; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    background-image: linear-gradient(to right top, #051937, #011c4c, #0f1c60, #2a1671, #47007e);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    overflow: hidden;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* #header{
+    margin-bottom: -200px;
+} */
+
+#heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: -10px;
+}
+
+.team-head{
+    text-shadow: 0px 2px 0px red;
+    margin-top: -15%;
+    /* width: 70%; */
+    font-size: 2.2rem;
+}
+
+#teams-with-overs{
+    margin-top: 40px;
+    display: block;
+    flex-direction: column;
+    gap: 20%;
+    justify-content: center;
+    /* align-items: center; */
+    height: 350px;
+    width:90vmax;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 0px rgb(251, 255, 0);
+}
+
+#team-details{
+    margin-top: 3%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 300px;
+    width:90vmax; */
+}
+
+#team-1, #team-2 {
+    /* padding-top: 2%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+
+#team-1 > h1, #team-2> h1 {
+    font-size: 2.5rem;
+}
+
+#input-team-1, #input-team-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 76);
+    box-shadow: 1px 3px 0px yellow;
+}
+
+input[type=text] {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#input-team-1 > button, #input-team-2 > button{
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: #15ff00;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: black;
+    
+}
+
+#input-team-1 > button:hover, #input-team-2 >button:hover{
+    background-color: aqua;
+    box-shadow: -2px 2px 0px rgb(247, 0, 255);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+#scorecard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
+#team-playing{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#score-details{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#over-details{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#input-overs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#input-overs > button {
+    height: 20px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: #15ff00;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: black;
+}
+
+#input-overs > button:hover{
+    background-color: aqua;
+    box-shadow: -2px 2px 0px rgb(247, 0, 255);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#overs-details{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 1.2rem;
+}
+
+#over-details-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#overs-details > button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #ff9900;
+    color: whitesmoke;
+    box-shadow: 0px 0px 6px rgb(255, 0, 0);
+}
+
+#overs-details > button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 6px rgb(0, 255, 55);
+}
+
+#match-result{
+    margin-top: 20px;
+    margin-bottom: 1.5%;
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    justify-content: center;
+    /* align-items: center; */
+    height: 150px;
+    width:90vmax;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 0px rgb(251, 255, 0);
+}
+
+#team-1-score, #team-2-score {
+    /* padding-top: 1%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+}
+
+#changing-team{
+    padding: 3%;
+    width: 500px;
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    /* display: flex; */
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* text-align: center; */
+    /* gap: 50%; */
+    background-color: rgb(0, 0, 0);
+    top: 25%;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px yellow;
+    transition: all 1s step-start;
+}
+
+#team-innings-ended{
+    font-size: 5.5rem;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    color: rgb(0, 255, 0);
+    text-shadow: 0px 2px 0px rgb(255, 0, 0);
+    display: flex;
+}
+
+#cross-div{
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    top:0;
+    left: 1;
+    font-size: 2rem;
+    height: 40px;
+    width: 50px;
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 1px 0px rgb(0, 247, 255);
+}
+
+#cross-div:hover{
+    text-shadow: 0px 0px 10px rgb(0, 247, 255);
+}
+
+.hidden{
+    display: none;
+    /* opacity: 0; */
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GullyStats: Track and record gully cricket match scores effortlessly with GullyStats. A simple and fun way for teams to manage scorecards and stats for every local match!</title>
+    <meta name="description" content="Track and record gully cricket match scores effortlessly with GullyStats. A simple and fun way for teams to manage scorecards and stats for every local match!">
+    <link rel = "icon" type ="image/jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="heading">
+            <h1 id="heading">GullyStats: Track Your Match</h1>
+        </div>
+    </header>
+    
+    <div id="changing-team" class="hidden">
+        <div id="team-innings-ended">
+            Team Innings Ended
+            <div id="cross-div">X</div>
+        </div>
+    </div>
+
+    <section id="start-match">
+        <div id="teams-with-overs">
+            <div id="team-details">
+                <div id="team-1">
+                    <h1 id="team-1-name">Team: 1</h1>
+                    <div id="input-team-1">
+                        <input type="text" name="team-1-name" id="input-team-1-name">
+                        <button id="add-team-1-btn">Add Team</button>
+                    </div>
+                </div>
+                <div id="team-2">
+                    <h1 id="team-2-name">Team: 2</h1>
+                    <div id="input-team-2">
+                        <input type="text" name="team-2-name" id="input-team-2-name">
+                        <button id="add-team-2-btn">Add Team</button>
+                    </div>
+                </div>
+            </div>
+            <div id="input-overs">
+                <input id="enter-no-over" type="text" name="over-no">
+                <button id="add-over-btn">Add Overs</button>
+            </div>
+        </div>
+        
+        
+        <div id="scorecard">
+            <div id="team-playing"  class="">Match Yet to Be Started</div>
+            <div id="score-details"  class="">0/0</div>
+        </div>
+        <div id="over-details-outer" class="">
+            <div id="overs-details">
+                <button id="wicket" style="background-color: crimson;">W</button>
+                <button id="no-ball">NB</button>
+                <button id="wide-ball">WB</button>
+                <button id="zero-run">0</button>
+                <button id="single-run">1</button>
+                <button id="double-run">2</button>
+                <button id="triple-run">3</button>
+                <button id="boundary">4</button>
+                <button id="six-run" style="background-color: rgb(0, 253, 13); color: black;">6</button>
+            </div>
+        </div>
+        <div id="match-result-outer-div" class="">
+            <div id="match-result" class="">
+                <div id="team-1-score">
+                    <h1 id="team-1-score-name">Team: 1</h1>
+                    <h1 id="team-1-score-run">0</h1>
+                </div>
+                <div id="team-2-score">
+                    <h1 id="team-2-score-name">Team: 2</h1>
+                    <h1 id="team-2-score-run">0</h1>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

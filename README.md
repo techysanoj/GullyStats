@@ -20,6 +20,9 @@ A fully functional Javascript Project which Track and record gully cricket match
 - Easy to manage innings and overs
 - Built using HTML, CSS, and JavaScript for smooth performance
 
+## Live Demo
+Check out the live demo [here](https://gully-stats.vercel.app/)
+
 ## Screenshots
 
 ![Main Scoreboard](/homescreen.png)  
